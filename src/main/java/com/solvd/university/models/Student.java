@@ -8,7 +8,10 @@ public class Student {
     private ZonedDateTime dateOfBirth;
     private String address;
     private int entryExamScore;
-    
+
+
+
+
     public String getName() {
         return name;
     }
