@@ -10,11 +10,11 @@ public class AdmissionService {
         this.studentRepo = studentRepo;
     }
 
-    public StudentRepo getStudents() {
-        return students;
+    public StudentRepo getStudentRepo() {
+        return studentRepo;
     }
 
-    public void setStudents(StudentRepo students) {
-        this.students = students;
+    public void setStudentRepo(StudentRepo studentRepo) {
+        this.studentRepo = studentRepo;
     }
 }

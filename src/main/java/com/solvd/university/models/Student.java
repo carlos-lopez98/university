@@ -1,6 +1,5 @@
 package main.java.com.solvd.university.models;
 
-import java.time.ZonedDateTime;
 
 public class Student {
 
