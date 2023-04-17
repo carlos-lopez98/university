@@ -5,11 +5,15 @@ import java.time.ZonedDateTime;
 public class Student {
 
     private String name;
-    private ZonedDateTime dateOfBirth;
+    private String dateOfBirth;
     private String address;
     private int entryExamScore;
 
-
+    public Student(String name, String dateOfBirth, int entryExamScore) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.entryExamScore = entryExamScore;
+    }
 
 
     public String getName() {
@@ -18,10 +22,10 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-    public ZonedDateTime getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
-    public void setDateOfBirth(ZonedDateTime dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
     public String getAddress() {
