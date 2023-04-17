@@ -10,7 +10,7 @@ public class University {
         this.universityName = universityName;
     }
 
-    
+
     public int getUniversityId() {
         return universityId;
     }
