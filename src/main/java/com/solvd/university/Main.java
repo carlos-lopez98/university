@@ -1,4 +1,4 @@
-package main.java.com.solvd.university;
+package com.solvd.university;
 
 public class Main {
 

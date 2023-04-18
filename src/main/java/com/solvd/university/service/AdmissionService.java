@@ -1,6 +1,6 @@
-package main.java.com.solvd.university.service;
+package com.solvd.university.service;
 
-import main.java.com.solvd.university.repository.StudentRepo;
+import com.solvd.university.repository.StudentRepo;
 
 public class AdmissionService {
 
