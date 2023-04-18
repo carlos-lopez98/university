@@ -1,6 +1,7 @@
 package com.solvd.university.models;
 
 public class Club {
+
     private String clubName;
     private int clubId;
     private int meetingDate;

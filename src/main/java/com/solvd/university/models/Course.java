@@ -1,6 +1,7 @@
 package com.solvd.university.models;
 
 public class Course {
+
     private int courseId;
     private String courseName;
 

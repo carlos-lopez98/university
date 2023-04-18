@@ -1,6 +1,7 @@
 package com.solvd.university.models;
 
 public class Department {
+
     private String departmentName;
     private int departmentId;
 
