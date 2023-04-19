@@ -1,6 +1,6 @@
-package com.solvd.university.models;
+package com.solvd.university.models.departments;
 
-public class Department {
+public abstract class Department {
 
     private String departmentName;
     private int departmentId;

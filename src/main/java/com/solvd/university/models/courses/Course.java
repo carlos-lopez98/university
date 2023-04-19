@@ -1,6 +1,6 @@
-package com.solvd.university.models;
+package com.solvd.university.models.courses;
 
-public class Course {
+public abstract class Course {
 
     private int courseId;
     private String courseName;

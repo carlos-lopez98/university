@@ -1,4 +1,4 @@
-package com.solvd.university.models;
+package com.solvd.university.models.universities;
 
 public class University {
 

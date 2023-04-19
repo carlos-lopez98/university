@@ -1,6 +1,6 @@
 package com.solvd.university.repository;
 
-import com.solvd.university.models.Staff;
+import com.solvd.university.models.persons.Staff;
 import java.util.List;
 
 public class StaffRepo {

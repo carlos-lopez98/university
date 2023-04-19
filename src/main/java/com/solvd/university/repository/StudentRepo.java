@@ -1,6 +1,6 @@
 package com.solvd.university.repository;
 
-import com.solvd.university.models.Student;
+import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
