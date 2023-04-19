@@ -6,6 +6,7 @@ public class Student {
     private int entryExamScore;
 
     public Student(String name, String dateOfBirth, int entryExamScore) {
+
         this.entryExamScore = entryExamScore;
     }
 
