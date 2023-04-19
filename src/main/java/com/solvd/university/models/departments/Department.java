@@ -3,11 +3,9 @@ package com.solvd.university.models.departments;
 public abstract class Department {
 
     private String departmentName;
-    private int departmentId;
 
-    public Department(String departmentName, int departmentId) {
+    public Department(String departmentName) {
         this.departmentName = departmentName;
-        this.departmentId = departmentId;
     }
 
     public String getDepartmentName() {
@@ -18,11 +16,4 @@ public abstract class Department {
         this.departmentName = departmentName;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
-    }
-
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
-    }
 }

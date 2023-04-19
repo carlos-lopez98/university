@@ -4,7 +4,7 @@ public class EnglishDep extends Department{
 
 
 
-    public EnglishDep(String departmentName, int departmentId) {
-        super(departmentName, departmentId);
+    public EnglishDep(String departmentName ) {
+        super(departmentName);
     }
 }
