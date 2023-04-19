@@ -9,7 +9,6 @@ public class Student {
         this.entryExamScore = entryExamScore;
     }
 
-
     public int getEntryExamScore() {
         return entryExamScore;
     }
