@@ -4,7 +4,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class SoccerClub extends Club{
+public class SoccerClub extends Club {
 
     private List<Student> members;
     private String meetingTimes;

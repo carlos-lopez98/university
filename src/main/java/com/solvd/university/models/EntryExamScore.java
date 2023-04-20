@@ -6,7 +6,7 @@ public class EntryExamScore {
     private int readingScore;
     private int writingScore;
 
-    EntryExamScore(int mathScore, int readingScore, int writingScore) {
+    public EntryExamScore(int mathScore, int readingScore, int writingScore) {
         this.mathScore = mathScore;
         this.readingScore = readingScore;
         this.writingScore = writingScore;
