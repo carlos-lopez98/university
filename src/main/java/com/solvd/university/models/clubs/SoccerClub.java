@@ -6,7 +6,6 @@ import java.util.List;
 
 public class SoccerClub extends Club {
 
-    private List<Student> members;
     private String meetingTimes;
 
     public SoccerClub(String clubName) {
@@ -14,12 +13,10 @@ public class SoccerClub extends Club {
         this.meetingTimes = "Tues @ 1600 Hours, Sat @ 1600 Hours, Sun @ 1200 Hours";
     }
 
-    public List<Student> getMembers() {
-        return members;
-    }
-
-    public void setMembers(List<Student> members) {
-        this.members = members;
+    //Abstract Override
+    @Override
+    public void displayActivity() {
+        System.out.println("We will be playing in teams of 7 per team, and we will participate in local leagues");
     }
 
     public String getMeetingTimes() {

@@ -4,9 +4,8 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class RoboticsClub extends Club{
+public class RoboticsClub extends Club {
 
-    private List<Student> members;
     private String meetingTimes;
 
     public RoboticsClub(String clubName) {
@@ -15,12 +14,10 @@ public class RoboticsClub extends Club{
         this.meetingTimes = "M @ 1200 Hours, Tues @ 1200 Hours, Fri @ 1900 Hours";
     }
 
-    public List<Student> getMembers() {
-        return members;
-    }
-
-    public void setMembers(List<Student> members) {
-        this.members = members;
+    //Abstract Override
+    @Override
+    public void displayActivity() {
+        System.out.println("We will be creating an underwater robot this semester");
     }
 
     public String getMeetingTimes() {
