@@ -7,7 +7,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class University {
+public abstract class University {
 
     private List<Course> courses;
     private List<Department> departments;
@@ -23,6 +23,9 @@ public class University {
         this.students = students;
         this.personnel = personnel;
     }
+
+    //Abstract Method
+    public abstract void displayCoursesOffered();
 
     public String getUniversityName() {
         return universityName;

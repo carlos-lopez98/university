@@ -5,6 +5,7 @@ import com.solvd.university.models.departments.Department;
 import com.solvd.university.models.persons.Staff;
 import com.solvd.university.models.persons.Student;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class PublicUniversity extends University {
@@ -42,5 +43,15 @@ public class PublicUniversity extends University {
 
     public boolean isInState() {
         return inState;
+    }
+
+    @Override
+    public void displayCoursesOffered() {
+
+        System.out.println(this.getUniversityName() + "Offers the below courses");
+
+        for(Course course: this.getCourses()){
+            System.out.println(course.getCourseName());
+        }
     }
 }

@@ -38,4 +38,15 @@ public class PrivateUniversity extends University{
 
     public boolean isInState() {
         return inState;
-    }}
+    }
+
+        @Override
+        public void displayCoursesOffered() {
+
+            System.out.println(this.getUniversityName() + "Offers the below courses");
+
+            for (Course course : this.getCourses()) {
+                System.out.println(course.getCourseName());
+            }
+        }
+}
