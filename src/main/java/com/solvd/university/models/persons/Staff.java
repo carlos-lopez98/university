@@ -8,14 +8,14 @@ public class Staff extends Person{
     private String staffJob;
     private int staffID;
 
-    Staff(String firstName, String lastName, University uniAssigned, String staffJob) {
+    public Staff(String firstName, String lastName, University uniAssigned, String staffJob) {
         super(firstName, lastName, uniAssigned);
 
         this.staffJob = staffJob;
 
-        if(!uniAssigned.getPersonnel().isEmpty()){
+      /*  if(!uniAssigned.getPersonnel().isEmpty()){
             this.staffID = uniAssigned.getPersonnel().size();
-        }
+        }*/
     }
 
 

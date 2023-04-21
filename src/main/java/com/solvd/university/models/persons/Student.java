@@ -2,14 +2,16 @@ package com.solvd.university.models.persons;
 
 
 import com.solvd.university.models.EntryExamScore;
+import com.solvd.university.models.universities.University;
 
-public class Student {
+public class Student extends Person{
 
     private EntryExamScore entryExamScore;
     private int studentId;
 
-    public Student(String name, String dateOfBirth, int mathScore, int readingScore, int writingScore ) {
 
+    public Student(String firstName, String lastName, University uniAssigned,  int mathScore, int readingScore, int writingScore) {
+        super(firstName, lastName, uniAssigned);
         this.entryExamScore = new EntryExamScore(mathScore, readingScore, writingScore);
     }
 

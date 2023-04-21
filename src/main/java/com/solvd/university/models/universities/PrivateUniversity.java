@@ -2,6 +2,7 @@ package com.solvd.university.models.universities;
 
 import com.solvd.university.models.courses.Course;
 import com.solvd.university.models.departments.Department;
+import com.solvd.university.models.persons.Person;
 import com.solvd.university.models.persons.Staff;
 import com.solvd.university.models.persons.Student;
 

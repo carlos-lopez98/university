@@ -7,7 +7,7 @@ public class Calculus extends Course{
         System.out.println("Calculus Volume 1 by Morris Kline");
     }
 
-    public Calculus(String courseName) {
+    public Calculus() {
        super.setCourseName("Calculus");
     }
 }
