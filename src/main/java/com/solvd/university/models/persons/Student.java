@@ -6,6 +6,7 @@ import com.solvd.university.models.EntryExamScore;
 public class Student {
 
     private EntryExamScore entryExamScore;
+    private int studentId;
 
     public Student(String name, String dateOfBirth, int mathScore, int readingScore, int writingScore ) {
 

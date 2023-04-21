@@ -8,4 +8,9 @@ public class EnglishDep extends Department{
 
         super.setDepartmentName("English Department");
     }
+
+    @Override
+    public void seeDepartmentTutoringHours() {
+
+    }
 }

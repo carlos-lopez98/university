@@ -6,4 +6,9 @@ public class ScienceDep extends Department{
     public ScienceDep() {
         super.setDepartmentName("Science Department");
     }
+
+    @Override
+    public void seeDepartmentTutoringHours() {
+
+    }
 }

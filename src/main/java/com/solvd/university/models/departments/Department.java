@@ -4,6 +4,9 @@ public abstract class Department {
 
     private String departmentName;
 
+    //Abstract Method
+    public abstract void seeDepartmentTutoringHours();
+
     public String getDepartmentName() {
         return departmentName;
     }

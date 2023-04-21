@@ -7,4 +7,9 @@ public class EngineeringDep extends Department{
 
         super.setDepartmentName("Engineering Department");
     }
+
+    @Override
+    public void seeDepartmentTutoringHours() {
+
+    }
 }

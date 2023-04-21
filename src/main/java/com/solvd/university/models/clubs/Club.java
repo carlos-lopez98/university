@@ -9,6 +9,7 @@ public abstract class Club {
     private String clubName;
     private List<Student> members;
     private String meetingTimes;
+
     //Abstract Method
     public abstract void displayActivity();
 
