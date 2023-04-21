@@ -8,13 +8,9 @@ public abstract class Club {
 
     private String clubName;
     private List<Student> members;
-
+    private String meetingTimes;
     //Abstract Method
     public abstract void displayActivity();
-
-    public Club(String clubName) {
-        this.clubName = clubName;
-    }
 
     public String getClubName() {
         return clubName;
@@ -30,5 +26,13 @@ public abstract class Club {
 
     public void setMembers(List<Student> members) {
         this.members = members;
+    }
+
+    public String getMeetingTimes() {
+        return meetingTimes;
+    }
+
+    public void setMeetingTimes(String meetingTimes) {
+        this.meetingTimes = meetingTimes;
     }
 }

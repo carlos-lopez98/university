@@ -9,6 +9,6 @@ public class Literature extends Course{
     }
 
     public Literature(String courseName) {
-        super(courseName);
+        super.setCourseName("Literature");
     }
 }

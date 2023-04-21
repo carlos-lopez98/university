@@ -6,11 +6,9 @@ import java.util.List;
 
 public class SoccerClub extends Club {
 
-    private String meetingTimes;
-
-    public SoccerClub(String clubName) {
-        super(clubName);
-        this.meetingTimes = "Tues @ 1600 Hours, Sat @ 1600 Hours, Sun @ 1200 Hours";
+    public SoccerClub() {
+        super.setClubName("SoccerClub");
+        super.setMeetingTimes("Tues @ 1600 Hours, Sat @ 1600 Hours, Sun @ 1200 Hours");
     }
 
     //Abstract Override
@@ -19,11 +17,4 @@ public class SoccerClub extends Club {
         System.out.println("We will be playing in teams of 7 per team, and we will participate in local leagues");
     }
 
-    public String getMeetingTimes() {
-        return meetingTimes;
-    }
-
-    public void setMeetingTimes(String meetingTimes) {
-        this.meetingTimes = meetingTimes;
-    }
 }

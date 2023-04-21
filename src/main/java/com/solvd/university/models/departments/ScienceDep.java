@@ -3,7 +3,7 @@ package com.solvd.university.models.departments;
 public class ScienceDep extends Department{
 
 
-    public ScienceDep(String departmentName ) {
-        super(departmentName);
+    public ScienceDep() {
+        super.setDepartmentName("Science Department");
     }
 }

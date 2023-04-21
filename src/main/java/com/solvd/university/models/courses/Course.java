@@ -8,11 +8,6 @@ public abstract class Course {
     //Abstract Method
     public abstract void booksNeeded();
 
-
-    public Course(String courseName){
-        this.courseName = courseName;
-    }
-
     public String getCourseName() {
         return courseName;
     }

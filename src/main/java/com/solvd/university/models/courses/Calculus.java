@@ -8,6 +8,6 @@ public class Calculus extends Course{
     }
 
     public Calculus(String courseName) {
-        super(courseName);
+       super.setCourseName("Calculus");
     }
 }

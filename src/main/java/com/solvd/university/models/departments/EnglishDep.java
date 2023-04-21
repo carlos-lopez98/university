@@ -4,7 +4,8 @@ public class EnglishDep extends Department{
 
 
 
-    public EnglishDep(String departmentName ) {
-        super(departmentName);
+    public EnglishDep() {
+
+        super.setDepartmentName("English Department");
     }
 }
