@@ -1,6 +1,6 @@
 package com.solvd.university.models.courses;
 
-public class Literature extends Course{
+public class Literature extends Course implements Enroll{
 
 
     @Override
@@ -10,5 +10,10 @@ public class Literature extends Course{
 
     public Literature() {
         super.setCourseName("Literature");
+    }
+
+    @Override
+    public void addClassToSchedule() {
+        System.out.println("Literature has been added to your schedule");
     }
 }

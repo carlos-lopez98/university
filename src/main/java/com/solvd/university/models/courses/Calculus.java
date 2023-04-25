@@ -1,6 +1,6 @@
 package com.solvd.university.models.courses;
 
-public class Calculus extends Course{
+public class Calculus extends Course implements Enroll{
 
     @Override
     public void booksNeeded() {
@@ -9,5 +9,10 @@ public class Calculus extends Course{
 
     public Calculus() {
        super.setCourseName("Calculus");
+    }
+
+    @Override
+    public void addClassToSchedule() {
+        System.out.println("Calculus has been added to your schedule");
     }
 }
