@@ -8,7 +8,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class PrivateUniversity extends University{
+public class PrivateUniversity extends University implements UniversityHours{
 
     private int tuitionCost;
     private int dormCost;
@@ -50,4 +50,9 @@ public class PrivateUniversity extends University{
                 System.out.println(course.getCourseName());
             }
         }
+
+    @Override
+    public void displayAdmissionOfficeHours() {
+        System.out.printf("University is open from 8AM - 5PM M-F");
+    }
 }
