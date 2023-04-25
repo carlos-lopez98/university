@@ -4,7 +4,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class SoccerClub extends Club {
+public class SoccerClub extends Club implements Activity{
 
     public SoccerClub() {
         super.setClubName("SoccerClub");
@@ -17,4 +17,8 @@ public class SoccerClub extends Club {
         System.out.println("We will be playing in teams of 7 per team, and we will participate in local leagues");
     }
 
+    @Override
+    public void doActivity() {
+        System.out.println("Soccer Club is now in session");
+    }
 }

@@ -4,7 +4,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class RoboticsClub extends Club {
+public class RoboticsClub extends Club implements Activity{
 
 
     public RoboticsClub() {
@@ -16,5 +16,10 @@ public class RoboticsClub extends Club {
     @Override
     public void displayActivity() {
         System.out.println("We will be creating an underwater robot this semester");
+    }
+
+    @Override
+    public void doActivity() {
+        System.out.println("Robotics Club is now in session");
     }
 }
