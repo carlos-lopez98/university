@@ -4,7 +4,7 @@ package com.solvd.university.models.persons;
 import com.solvd.university.models.EntryExamScore;
 import com.solvd.university.models.universities.University;
 
-public class Student extends Person{
+public class Student extends Person implements Speak{
 
     private EntryExamScore entryExamScore;
     private int studentId;
@@ -21,5 +21,10 @@ public class Student extends Person{
 
     public void setEntryExamScore(EntryExamScore entryExamScore) {
         this.entryExamScore = entryExamScore;
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("Hello I'm a University Student");
     }
 }

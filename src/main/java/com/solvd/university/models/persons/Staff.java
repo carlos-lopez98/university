@@ -2,7 +2,7 @@ package com.solvd.university.models.persons;
 
 import com.solvd.university.models.universities.University;
 
-public class Staff extends Person{
+public class Staff extends Person implements Speak{
 
     private String dateHired;
     private String staffJob;
@@ -25,5 +25,11 @@ public class Staff extends Person{
 
     public void setDateHired(String dateHired) {
         this.dateHired = dateHired;
+    }
+
+
+    @Override
+    public void speak() {
+        System.out.println("Hello I'm a University Staff");
     }
 }
