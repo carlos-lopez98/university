@@ -8,10 +8,8 @@ import com.solvd.university.models.courses.Chemistry;
 import com.solvd.university.models.courses.Course;
 import com.solvd.university.models.courses.Literature;
 import com.solvd.university.models.departments.Department;
-import com.solvd.university.models.departments.EngineeringDep;
 import com.solvd.university.models.departments.EnglishDep;
 import com.solvd.university.models.departments.ScienceDep;
-import com.solvd.university.models.persons.Person;
 import com.solvd.university.models.persons.Staff;
 import com.solvd.university.models.persons.Student;
 import com.solvd.university.models.universities.PrivateUniversity;
@@ -19,7 +17,6 @@ import com.solvd.university.models.universities.University;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
@@ -28,9 +25,8 @@ public class Main {
         Student studentOne = new Student("Carlos", "Lopez",null,78,92,95);
         Student studentTwo = new Student("John", "Doe", null, 85, 67, 92);
 
-        Department engineeringDep = new EngineeringDep();
         Department englishDep = new EnglishDep();
-        Department scienceDep = new ScienceDep();
+        Department scienceDep = new ScienceDep(scienceTrips);
 
         Club roboticsClub = new RoboticsClub();
         Club soccerClub = new SoccerClub();

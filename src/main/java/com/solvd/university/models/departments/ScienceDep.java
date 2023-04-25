@@ -1,8 +1,13 @@
 package com.solvd.university.models.departments;
 
+import java.util.List;
+
 public class ScienceDep extends Department implements Budget{
 
-    public ScienceDep() {
+    private final List<String> mandatoryPracticalFieldTrips;
+
+    public ScienceDep(List<String> mandatoryPracticalFieldTrips) {
+        this.mandatoryPracticalFieldTrips = mandatoryPracticalFieldTrips;
         super.setDepartmentName("Science Department");
     }
 

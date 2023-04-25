@@ -1,10 +1,13 @@
 package com.solvd.university.models.departments;
 
+import java.util.List;
+
 public class EnglishDep extends Department implements Budget{
 
-
+    private final List<String> booksInLibrary;
 
     public EnglishDep() {
+        this.booksInLibrary = booksInLibrary;
         super.setDepartmentName("English Department");
     }
 

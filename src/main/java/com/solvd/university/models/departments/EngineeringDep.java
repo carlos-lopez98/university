@@ -1,9 +1,13 @@
 package com.solvd.university.models.departments;
 
+import java.util.List;
+
 public class EngineeringDep extends Department implements Budget{
 
+    public final List<String> buildingToolsAvailable;
 
-    public EngineeringDep() {
+    public EngineeringDep(List<String> buildingToolsAvailable) {
+        this.buildingToolsAvailable = buildingToolsAvailable;
         super.setDepartmentName("Engineering Department");
     }
 

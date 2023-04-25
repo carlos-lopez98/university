@@ -8,7 +8,7 @@ import com.solvd.university.models.persons.Student;
 
 import java.util.List;
 
-public class PrivateUniversity extends University implements UniversityHours{
+public class PrivateUniversity extends University implements UniversityHours {
 
     private int tuitionCost;
     private int dormCost;
@@ -17,7 +17,7 @@ public class PrivateUniversity extends University implements UniversityHours{
     private final static int entryExamScoreNeeded = 92;
 
     public PrivateUniversity(String universityName, List<Course> courses, List<Department> departments, List<Student> students, List<Staff> personnel, boolean inState) {
-      super(universityName, courses, departments, students, personnel);
+        super(universityName, courses, departments, students, personnel);
 
         this.inState = inState;
 
@@ -31,7 +31,7 @@ public class PrivateUniversity extends University implements UniversityHours{
     }
 
     //Static
-    public static void showEntryExamScoreNeeded(){
+    public static void showEntryExamScoreNeeded() {
         System.out.println("Score needed for entry: " + entryExamScoreNeeded);
     }
 
@@ -47,15 +47,15 @@ public class PrivateUniversity extends University implements UniversityHours{
         return inState;
     }
 
-        @Override
-        public void displayCoursesOffered() {
+    @Override
+    public void displayCoursesOffered() {
 
-            System.out.println(this.getUniversityName() + "Offers the below courses");
+        System.out.println(this.getUniversityName() + "Offers the below courses");
 
-            for (Course course : this.getCourses()) {
-                System.out.println(course.getCourseName());
-            }
+        for (Course course : this.getCourses()) {
+            System.out.println(course.getCourseName());
         }
+    }
 
     @Override
     public void displayAdmissionOfficeHours() {
