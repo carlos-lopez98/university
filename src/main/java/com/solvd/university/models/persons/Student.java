@@ -4,7 +4,7 @@ package com.solvd.university.models.persons;
 import com.solvd.university.models.EntryExamScore;
 import com.solvd.university.models.universities.University;
 
-public class Student extends Person implements Speak{
+public final class Student extends Person implements Speak{
 
     private EntryExamScore entryExamScore;
     private int studentId;

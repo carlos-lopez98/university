@@ -14,6 +14,7 @@ public class PublicUniversity extends University implements UniversityHours {
     private int dormCost;
     private boolean inState;
 
+    private final static int entryExamScoreNeeded = 85;
 
     public PublicUniversity(String universityName,
                             List<Course> courses,
@@ -32,6 +33,13 @@ public class PublicUniversity extends University implements UniversityHours {
             this.dormCost = 12500;
         }
     }
+
+
+    //Static
+    public static void showEntryExamScoreNeeded(){
+        System.out.println("Score needed for entry: " + entryExamScoreNeeded);
+    }
+
 
     public int getTuitionCost() {
         return tuitionCost;

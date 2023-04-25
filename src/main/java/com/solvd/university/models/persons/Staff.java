@@ -2,7 +2,7 @@ package com.solvd.university.models.persons;
 
 import com.solvd.university.models.universities.University;
 
-public class Staff extends Person implements Speak{
+public final class Staff extends Person implements Speak{
 
     private String dateHired;
     private String staffJob;
