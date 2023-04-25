@@ -2,17 +2,17 @@ package com.solvd.university.models.departments;
 
 public abstract class Department {
 
-    private String departmentName;
+    private String departmentTeamName;
 
     //Abstract Method
     public abstract void seeDepartmentTutoringHours();
 
-    public String getDepartmentName() {
-        return departmentName;
+    public String getDepartmentTeamName() {
+        return departmentTeamName;
     }
 
-    public void setDepartmentName(String departmentName) {
-        this.departmentName = departmentName;
+    public void setDepartmentTeamName(String departmentTeamName) {
+        this.departmentTeamName = departmentTeamName;
     }
 
 }

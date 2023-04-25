@@ -6,9 +6,9 @@ public class EnglishDep extends Department implements Budget{
 
     private final List<String> booksInLibrary;
 
-    public EnglishDep() {
+    public EnglishDep(String departmentTeamName, List<String> booksInLibrary) {
         this.booksInLibrary = booksInLibrary;
-        super.setDepartmentName("English Department");
+        super.setDepartmentTeamName(departmentTeamName);
     }
 
     @Override

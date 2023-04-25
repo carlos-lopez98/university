@@ -6,9 +6,9 @@ public class EngineeringDep extends Department implements Budget{
 
     public final List<String> buildingToolsAvailable;
 
-    public EngineeringDep(List<String> buildingToolsAvailable) {
+    public EngineeringDep(String departmentTeamName, List<String> buildingToolsAvailable) {
         this.buildingToolsAvailable = buildingToolsAvailable;
-        super.setDepartmentName("Engineering Department");
+        super.setDepartmentName(departmentTeamName);
     }
 
     @Override

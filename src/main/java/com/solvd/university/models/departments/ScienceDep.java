@@ -6,9 +6,9 @@ public class ScienceDep extends Department implements Budget{
 
     private final List<String> mandatoryPracticalFieldTrips;
 
-    public ScienceDep(List<String> mandatoryPracticalFieldTrips) {
+    public ScienceDep(String departmentTeamName,List<String> mandatoryPracticalFieldTrips) {
         this.mandatoryPracticalFieldTrips = mandatoryPracticalFieldTrips;
-        super.setDepartmentName("Science Department");
+        super.setDepartmentTeamName(departmentTeamName);
     }
 
     @Override
