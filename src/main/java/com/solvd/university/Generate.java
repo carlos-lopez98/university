@@ -46,6 +46,8 @@ public final class Generate {
     };
 
 
+
+
     public static University generateUni() {
 
     }

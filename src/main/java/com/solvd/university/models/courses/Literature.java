@@ -2,6 +2,7 @@ package com.solvd.university.models.courses;
 
 public class Literature extends Course implements Enroll{
 
+    private String essaysNeeded;
 
     @Override
     public void booksNeeded() {

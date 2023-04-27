@@ -2,6 +2,8 @@ package com.solvd.university.models.courses;
 
 public class Chemistry extends Course implements Enroll{
 
+    private String equipmentNeeded;
+
     public Chemistry() {
         super.setCourseName("Chemistry");
     }
