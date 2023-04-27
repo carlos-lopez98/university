@@ -8,7 +8,7 @@ import java.util.List;
 
 public final class Generate {
 
-    private final List<String> PublicUniversityNames = new ArrayList<>(){
+    private final List<String> PublicUniversityNames = new ArrayList<>() {
         {
             add("Cal State Long Beach");
             add("Cal State San Diego");
@@ -17,7 +17,7 @@ public final class Generate {
             add("CalTech");
         }
     };
-    private final List<String> PrivateUniversityNames = new ArrayList<>(){
+    private final List<String> PrivateUniversityNames = new ArrayList<>() {
         {
             add("Stanford University");
             add("UCLA");
@@ -26,10 +26,27 @@ public final class Generate {
             add("Santa Clara University");
         }
     };
+    private final List<String> FirstNames = new ArrayList<>() {
+        {
+            add("John");
+            add("Michelle");
+            add("Gerald");
+            add("Carlos");
+            add("Mary");
+        }
+    };
+    private final List<String> lastNames = new ArrayList<>() {
+        {
+            add("White");
+            add("Smith");
+            add("Doe");
+            add("Prior");
+            add("Felt");
+        }
+    };
 
 
-
-    public static University generateUni(){
+    public static University generateUni() {
 
     }
 }

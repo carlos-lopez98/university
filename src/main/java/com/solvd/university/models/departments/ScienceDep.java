@@ -2,11 +2,11 @@ package com.solvd.university.models.departments;
 
 import java.util.List;
 
-public class ScienceDep extends Department implements Budget{
+public class ScienceDep extends Department implements Budget {
 
     private final List<String> mandatoryPracticalFieldTrips;
 
-    public ScienceDep(String departmentTeamName,List<String> mandatoryPracticalFieldTrips) {
+    public ScienceDep(String departmentTeamName, List<String> mandatoryPracticalFieldTrips) {
         this.mandatoryPracticalFieldTrips = mandatoryPracticalFieldTrips;
         super.setDepartmentTeamName(departmentTeamName);
     }
