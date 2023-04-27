@@ -6,6 +6,7 @@ import java.util.List;
 
 public class RoboticsClub extends Club implements Activity{
 
+    private String clubRobot;
 
     public RoboticsClub() {
         super.setClubName("RoboticsClub");

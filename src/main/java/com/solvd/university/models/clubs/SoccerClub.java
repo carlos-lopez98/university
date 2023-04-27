@@ -6,6 +6,8 @@ import java.util.List;
 
 public class SoccerClub extends Club implements Activity{
 
+    private String teamName;
+
     public SoccerClub() {
         super.setClubName("SoccerClub");
         super.setMeetingTimes("Tues @ 1600 Hours, Sat @ 1600 Hours, Sun @ 1200 Hours");
