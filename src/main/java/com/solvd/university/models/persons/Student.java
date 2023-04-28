@@ -9,7 +9,7 @@ public final class Student extends Person implements Speak {
     private int readingScore;
     private int writingScore;
 
-    public Student(String firstName, String lastName, University uniAssigned) {
+    public Student(String firstName, String lastName, String uniAssigned) {
         super(firstName, lastName, uniAssigned);
     }
 

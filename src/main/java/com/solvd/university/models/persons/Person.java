@@ -9,9 +9,9 @@ public abstract class Person {
     private String dateOfBirth;
     private String address;
 
-    private University uniAssigned;
+    private String uniAssigned;
 
-    Person(String firstName, String lastName, University uniAssigned){
+    Person(String firstName, String lastName, String uniAssigned){
         this.firstName = firstName;
         this.lastName = lastName;
         this.uniAssigned = uniAssigned;

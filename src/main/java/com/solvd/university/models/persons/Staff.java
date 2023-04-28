@@ -10,7 +10,7 @@ public final class Staff extends Person implements Speak {
     private String staffJob;
     private int staffID;
 
-    public Staff(String firstName, String lastName, University uniAssigned) {
+    public Staff(String firstName, String lastName, String uniAssigned) {
         super(firstName, lastName, uniAssigned);
     }
 
