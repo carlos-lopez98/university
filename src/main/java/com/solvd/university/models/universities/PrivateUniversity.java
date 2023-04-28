@@ -14,7 +14,7 @@ public class PrivateUniversity extends University implements UniversityHours {
     private int dormCost;
     private boolean inState;
 
-    private final static int entryExamScoreNeeded = 92;
+    private final  int EntryExamScoreNeeded = 92;
 
     public PrivateUniversity(String universityName, List<Course> courses, List<Department> departments, boolean inState) {
         super(universityName, courses, departments);
@@ -31,8 +31,8 @@ public class PrivateUniversity extends University implements UniversityHours {
     }
 
     //Static
-    public static void showEntryExamScoreNeeded() {
-        System.out.println("Score needed for entry: " + entryExamScoreNeeded);
+    public  void showEntryExamScoreNeeded() {
+        System.out.println("Score needed for entry: " + EntryExamScoreNeeded);
     }
 
     public int getTuitionCost() {
@@ -60,5 +60,9 @@ public class PrivateUniversity extends University implements UniversityHours {
     @Override
     public void displayAdmissionOfficeHours() {
         System.out.printf("University is open from 8AM - 5PM M-F");
+    }
+
+    public int getEntryExamScoreNeeded() {
+        return EntryExamScoreNeeded;
     }
 }

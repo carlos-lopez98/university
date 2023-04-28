@@ -14,7 +14,7 @@ public class PublicUniversity extends University implements UniversityHours {
     private int dormCost;
     private boolean inState;
 
-    private final static int entryExamScoreNeeded = 85;
+    private final int EntryExamScoreRequirement = 85;
 
     public PublicUniversity(String universityName,
                             List<Course> courses,
@@ -34,8 +34,8 @@ public class PublicUniversity extends University implements UniversityHours {
 
 
     //Static
-    public static void showEntryExamScoreNeeded(){
-        System.out.println("Score needed for entry: " + entryExamScoreNeeded);
+    public void showEntryExamScoreNeeded(){
+        System.out.println("Score needed for entry: " + EntryExamScoreRequirement);
     }
 
 
@@ -64,5 +64,9 @@ public class PublicUniversity extends University implements UniversityHours {
     @Override
     public void displayAdmissionOfficeHours() {
         System.out.printf("University is open from 8AM - 5PM M-F");
+    }
+
+    public int getEntryExamScoreRequirement() {
+        return EntryExamScoreRequirement;
     }
 }
