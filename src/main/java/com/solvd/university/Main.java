@@ -69,14 +69,14 @@ public class Main {
                 university = new PrivateUniversity(university.getUniversityName(), university.getCourses(),
                         university.getDepartments(), ((PrivateUniversity) university).isInState());
                 if(((PrivateUniversity) university).getEntryExamScoreNeeded() < EntryExamScore.calculateEntryExamScore(student)){
-                    System.out.println(counter + ": " + university.getUniversityName());
+                    logger.info(counter + ": " + university.getUniversityName());
                     counter++;
                 }
             }else if(university.getClass() == PublicUniversity.class){
                 university = new PublicUniversity(university.getUniversityName(), university.getCourses(),
                         university.getDepartments(), ((PublicUniversity) university).isInState());
                 if(((PublicUniversity) university).getEntryExamScoreRequirement() < EntryExamScore.calculateEntryExamScore(student)){
-                    System.out.println(counter + ": " + university.getUniversityName());
+                    logger.info(counter + ": " + university.getUniversityName());
                     counter++;
                 }
             }
