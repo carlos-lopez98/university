@@ -63,21 +63,20 @@ public class Main {
     }
 
     private static void printQualifiedSchools(Student student){
-
         int counter = 1;
         for (University university : universityDatabase.getUniversityList()) {
             if(university.getClass() == PrivateUniversity.class){
                 university = new PrivateUniversity(university.getUniversityName(), university.getCourses(),
                         university.getDepartments(), ((PrivateUniversity) university).isInState());
-                if(((PrivateUniversity) university).getEntryExamScoreNeeded() > EntryExamScore.calculateEntryExamScore(student)){
-                    logger.info(counter + ": " + university.getUniversityName());
+                if(((PrivateUniversity) university).getEntryExamScoreNeeded() < EntryExamScore.calculateEntryExamScore(student)){
+                    System.out.println(counter + ": " + university.getUniversityName());
                     counter++;
                 }
             }else if(university.getClass() == PublicUniversity.class){
                 university = new PublicUniversity(university.getUniversityName(), university.getCourses(),
                         university.getDepartments(), ((PublicUniversity) university).isInState());
-                if(((PublicUniversity) university).getEntryExamScoreRequirement() > EntryExamScore.calculateEntryExamScore(student)){
-                    logger.info(counter + ": " + university.getUniversityName());
+                if(((PublicUniversity) university).getEntryExamScoreRequirement() < EntryExamScore.calculateEntryExamScore(student)){
+                    System.out.println(counter + ": " + university.getUniversityName());
                     counter++;
                 }
             }
