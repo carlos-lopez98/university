@@ -4,6 +4,10 @@ public abstract class Department {
 
     private String departmentTeamName;
 
+    public Department(String departmentTeamName) {
+        this.departmentTeamName = departmentTeamName;
+    }
+
     //Abstract Method
     public abstract void seeDepartmentTutoringHours();
 

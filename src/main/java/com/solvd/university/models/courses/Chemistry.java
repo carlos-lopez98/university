@@ -4,8 +4,8 @@ public class Chemistry extends Course implements Enroll{
 
     private String equipmentNeeded;
 
-    public Chemistry() {
-        super.setCourseName("Chemistry");
+    public Chemistry(String courseName) {
+        super.setCourseName(courseName);
     }
 
     @Override
@@ -16,5 +16,13 @@ public class Chemistry extends Course implements Enroll{
     @Override
     public void addClassToSchedule() {
         System.out.println("Chemistry has been added to your schedule");
+    }
+
+    public String getEquipmentNeeded() {
+        return equipmentNeeded;
+    }
+
+    public void setEquipmentNeeded(String equipmentNeeded) {
+        this.equipmentNeeded = equipmentNeeded;
     }
 }

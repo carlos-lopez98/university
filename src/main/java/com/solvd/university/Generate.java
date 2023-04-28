@@ -26,6 +26,14 @@ public final class Generate {
             add("Santa Clara University");
         }
     };
+
+    private final List<Boolean> inStateorOut = new ArrayList<Boolean>(){
+        {
+            add(false);
+            add(true);
+        }
+    };
+
     private final List<String> FirstNames = new ArrayList<>() {
         {
             add("John");
@@ -45,10 +53,7 @@ public final class Generate {
         }
     };
 
-
-
-
-    public static University generateUni() {
+    public static University generatePublicUni() {
 
     }
 }

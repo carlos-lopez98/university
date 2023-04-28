@@ -8,9 +8,9 @@ public class RoboticsClub extends Club implements Activity{
 
     private String clubRobot;
 
-    public RoboticsClub() {
-        super.setClubName("RoboticsClub");
-        super.setMeetingTimes("M @ 1200 Hours, Tues @ 1200 Hours, Fri @ 1900 Hours");
+    public RoboticsClub(String clubName, String clubRobot, String meetingTimes) {
+     super(clubName, meetingTimes);
+     this.clubRobot = clubRobot;
     }
 
     //Abstract Override

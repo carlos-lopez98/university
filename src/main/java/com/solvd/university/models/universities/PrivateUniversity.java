@@ -16,8 +16,8 @@ public class PrivateUniversity extends University implements UniversityHours {
 
     private final static int entryExamScoreNeeded = 92;
 
-    public PrivateUniversity(String universityName, List<Course> courses, List<Department> departments, List<Student> students, List<Staff> personnel, boolean inState) {
-        super(universityName, courses, departments, students, personnel);
+    public PrivateUniversity(String universityName, List<Course> courses, List<Department> departments, boolean inState) {
+        super(universityName, courses, departments);
 
         this.inState = inState;
 

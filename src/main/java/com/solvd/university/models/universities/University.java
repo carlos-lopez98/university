@@ -16,12 +16,10 @@ public abstract class University {
     private String universityName;
 
 
-    public University(String universityName, List<Course> courses, List<Department> departments, List<Student> students, List<Staff> personnel) {
+    public University(String universityName, List<Course> courses, List<Department> departments) {
         this.universityName = universityName;
         this.courses = courses;
         this.departments = departments;
-        this.students = students;
-        this.personnel = personnel;
     }
 
     //Abstract Method

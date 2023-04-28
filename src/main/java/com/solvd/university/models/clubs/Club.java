@@ -10,6 +10,11 @@ public abstract class Club {
     private List<Student> members;
     private String meetingTimes;
 
+    public Club(String clubName, String meetingTimes){
+        this.clubName = clubName;
+        this.meetingTimes = meetingTimes;
+    }
+
     //Abstract Method
     public abstract void displayActivity();
 

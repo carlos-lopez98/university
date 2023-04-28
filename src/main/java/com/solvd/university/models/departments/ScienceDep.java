@@ -4,11 +4,10 @@ import java.util.List;
 
 public class ScienceDep extends Department implements Budget {
 
-    private final List<String> mandatoryPracticalFieldTrips;
+    private List<String> fieldTripLocations;
 
-    public ScienceDep(String departmentTeamName, List<String> mandatoryPracticalFieldTrips) {
-        this.mandatoryPracticalFieldTrips = mandatoryPracticalFieldTrips;
-        super.setDepartmentTeamName(departmentTeamName);
+    public ScienceDep(String departmentTeamName) {
+        super(departmentTeamName);
     }
 
     @Override
@@ -19,5 +18,13 @@ public class ScienceDep extends Department implements Budget {
     @Override
     public void showBudget() {
         System.out.println("This Semester's Budget for the Science Department is $200,000");
+    }
+
+    public List<String> getFieldTripLocations() {
+        return fieldTripLocations;
+    }
+
+    public void setFieldTripLocations(List<String> fieldTripLocations) {
+        this.fieldTripLocations = fieldTripLocations;
     }
 }

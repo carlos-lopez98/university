@@ -19,10 +19,8 @@ public class PublicUniversity extends University implements UniversityHours {
     public PublicUniversity(String universityName,
                             List<Course> courses,
                             List<Department> departments,
-                            List<Student> students,
-                            List<Staff> personnel,
                             boolean inState) {
-     super(universityName, courses, departments, students, personnel);
+     super(universityName, courses, departments);
         this.inState = inState;
 
         if (!this.inState) {

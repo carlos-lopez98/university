@@ -9,12 +9,20 @@ public class Calculus extends Course implements Enroll{
         System.out.println("Calculus Volume 1 by Morris Kline");
     }
 
-    public Calculus() {
-       super.setCourseName("Calculus");
+    public Calculus(String courseName) {
+       super.setCourseName(courseName);
     }
 
     @Override
     public void addClassToSchedule() {
         System.out.println("Calculus has been added to your schedule");
+    }
+
+    public String getGroupsAssigned() {
+        return groupsAssigned;
+    }
+
+    public void setGroupsAssigned(String groupsAssigned) {
+        this.groupsAssigned = groupsAssigned;
     }
 }

@@ -4,7 +4,6 @@ public abstract class Course {
 
     private String courseName;
 
-
     //Abstract Method
     public abstract void booksNeeded();
 

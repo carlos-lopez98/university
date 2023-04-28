@@ -4,11 +4,10 @@ import java.util.List;
 
 public class EngineeringDep extends Department implements Budget{
 
-    public final List<String> buildingToolsAvailable;
+    private List<String> buildingToolsAvailable;
 
-    public EngineeringDep(String departmentTeamName, List<String> buildingToolsAvailable) {
-        this.buildingToolsAvailable = buildingToolsAvailable;
-        super.setDepartmentName(departmentTeamName);
+    public EngineeringDep(String departmentTeamName) {
+        super(departmentTeamName);
     }
 
     @Override
@@ -19,5 +18,13 @@ public class EngineeringDep extends Department implements Budget{
     @Override
     public void showBudget() {
         System.out.println("This semester's budget for the Engineering department is $350,000");
+    }
+
+    public List<String> getBuildingToolsAvailable() {
+        return buildingToolsAvailable;
+    }
+
+    public void setBuildingToolsAvailable(List<String> buildingToolsAvailable) {
+        this.buildingToolsAvailable = buildingToolsAvailable;
     }
 }

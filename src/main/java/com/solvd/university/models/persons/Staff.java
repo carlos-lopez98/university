@@ -2,22 +2,17 @@ package com.solvd.university.models.persons;
 
 import com.solvd.university.models.universities.University;
 
-public final class Staff extends Person implements Speak{
+import java.util.ArrayList;
+
+public final class Staff extends Person implements Speak {
 
     private String dateHired;
     private String staffJob;
     private int staffID;
 
-    public Staff(String firstName, String lastName, University uniAssigned, String staffJob) {
+    public Staff(String firstName, String lastName, University uniAssigned) {
         super(firstName, lastName, uniAssigned);
-
-        this.staffJob = staffJob;
-
-      /*  if(!uniAssigned.getPersonnel().isEmpty()){
-            this.staffID = uniAssigned.getPersonnel().size();
-        }*/
     }
-
 
     public String getDateHired() {
         return dateHired;
@@ -27,6 +22,21 @@ public final class Staff extends Person implements Speak{
         this.dateHired = dateHired;
     }
 
+    public String getStaffJob() {
+        return staffJob;
+    }
+
+    public void setStaffJob(String staffJob) {
+        this.staffJob = staffJob;
+    }
+
+    public int getStaffID() {
+        return staffID;
+    }
+
+    public void setStaffID(int staffID) {
+        this.staffID = staffID;
+    }
 
     @Override
     public void speak() {
