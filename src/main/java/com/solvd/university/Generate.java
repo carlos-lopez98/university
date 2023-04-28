@@ -65,10 +65,8 @@ public final class Generate {
     };
 
     //Generates Random Public School
-    public static University generatePublicUni() {
-        int randoIndex = (int) Math.random() * PublicUniversityNames.size();
-
-        String uniName = PublicUniversityNames.get(randoIndex);
+    public static University generatePublicUni(int i) {
+        String uniName = PublicUniversityNames.get(i);
 
         University university = new PublicUniversity(uniName, generateCourseList(), generateDepartmentList(),
                 InStateOrOutOfState.get((int) Math.random() * InStateOrOutOfState.size()));
@@ -76,11 +74,9 @@ public final class Generate {
     }
 
     //Generates Random Private School
-    public static University generatePrivateUni() {
+    public static University generatePrivateUni(int j) {
 
-        int randoIndex = (int) Math.random() * PrivateUniversityNames.size();
-
-        String uniName = PrivateUniversityNames.get(randoIndex);
+        String uniName = PrivateUniversityNames.get(j);
 
         University university = new PublicUniversity(uniName, generateCourseList(), generateDepartmentList(),
                 InStateOrOutOfState.get((int) Math.random() * InStateOrOutOfState.size()));
