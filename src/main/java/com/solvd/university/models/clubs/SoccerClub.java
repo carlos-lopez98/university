@@ -8,9 +8,15 @@ public class SoccerClub extends Club implements Activity{
 
     private String teamName;
 
-    public SoccerClub(String clubName, String teamName, String meetingTimes) {
+    public SoccerClub(String clubName, String meetingTimes) {
         super(clubName, meetingTimes);
+    }
 
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
         this.teamName = teamName;
     }
 

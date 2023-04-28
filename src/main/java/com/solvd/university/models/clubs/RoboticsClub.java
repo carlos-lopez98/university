@@ -6,11 +6,18 @@ import java.util.List;
 
 public class RoboticsClub extends Club implements Activity{
 
-    private String clubRobot;
+    private String clubRobotName;
 
-    public RoboticsClub(String clubName, String clubRobot, String meetingTimes) {
+    public RoboticsClub(String clubName, String meetingTimes) {
      super(clubName, meetingTimes);
-     this.clubRobot = clubRobot;
+    }
+
+    public String getClubRobotName() {
+        return clubRobotName;
+    }
+
+    public void setClubRobotName(String clubRobotName) {
+        this.clubRobotName = clubRobotName;
     }
 
     //Abstract Override
