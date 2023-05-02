@@ -1,5 +1,6 @@
 package com.solvd.university;
 
+import com.solvd.university.database.StudentDatabase;
 import com.solvd.university.database.UniversityDatabase;
 import com.solvd.university.models.EntryExamScore;
 
@@ -11,6 +12,7 @@ import com.solvd.university.models.universities.University;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.solvd.university.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,9 +22,12 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     private static UniversityDatabase universityDatabase = new UniversityDatabase();
+    private static StudentDatabase studentDatabase = new StudentDatabase(universityDatabase);
+    private static StudentService studentService = new StudentService(studentDatabase, universityDatabase);
 
     public static void main(String[] args) {
 
+        //Emulates Student receiving information about what university they qualify for
         logger.debug("********Hello, Welcome to our University system********");
         logger.info("*******************************************************");
         logger.info("Our Current System has the below Universities Available for Review");
@@ -50,6 +55,13 @@ public class Main {
 
         //Emulate Student enrolling in University
         Student studentToEnroll = new Student("Bobby", "Lee", null);
+        studentService.enrollToUniversity(studentToEnroll, "Stanford");
+
+        //Emulates Student Asking for Courses available by University
+        logger.info(String.valueOf(universityDatabase.getAllCourses("Stanford")));
+
+        //Emulates Student adding Course to Curriculum
+
     };
 
 

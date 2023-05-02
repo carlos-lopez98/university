@@ -2,7 +2,10 @@ package com.solvd.university.database;
 
 import com.solvd.university.Generate;
 import com.solvd.university.Main;
+import com.solvd.university.exceptions.CourseNotFoundException;
 import com.solvd.university.exceptions.UniversityNotFoundException;
+import com.solvd.university.models.clubs.Club;
+import com.solvd.university.models.courses.Course;
 import com.solvd.university.models.persons.Student;
 import com.solvd.university.models.universities.University;
 import org.apache.logging.log4j.LogManager;
@@ -83,5 +86,27 @@ public class UniversityDatabase {
 
     public void setUniversityList(List<University> universityList) {
         this.universityList = universityList;
+    }
+
+
+    public Course getAllCourses(String universityName){
+
+        if(universityName == null){
+            throw new NullPointerException();
+        }
+
+        List<Course> courses = null;
+
+
+        for(University university: this.getUniversityList()){
+            if(universityName.equalsIgnoreCase(universityName)){
+                courses.addAll(university.getCourses());
+            }else{
+                throw new CourseNotFoundException("Could not find any courses for " + universityName);
+            }
+        }
+
+
+        return (Course) courses;
     }
 };

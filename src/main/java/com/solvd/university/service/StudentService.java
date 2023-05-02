@@ -46,4 +46,17 @@ public class StudentService {
 
 
     }
+    public void enrollToClub(Student student, String universityName, String clubName){
+
+        List<University> universities = universityDatabase.getUniversityList();
+
+        for(University uni: universities){
+            if(uni.getUniversityName().equalsIgnoreCase(universityName)){
+
+
+
+            }
+        }
+
+    }
 }
