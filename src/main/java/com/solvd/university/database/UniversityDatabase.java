@@ -3,9 +3,12 @@ package com.solvd.university.database;
 import com.solvd.university.Generate;
 import com.solvd.university.Main;
 import com.solvd.university.exceptions.CourseNotFoundException;
+import com.solvd.university.exceptions.PersonnelNotFoundException;
 import com.solvd.university.exceptions.UniversityNotFoundException;
 import com.solvd.university.models.clubs.Club;
 import com.solvd.university.models.courses.Course;
+import com.solvd.university.models.persons.Person;
+import com.solvd.university.models.persons.Staff;
 import com.solvd.university.models.persons.Student;
 import com.solvd.university.models.universities.University;
 import org.apache.logging.log4j.LogManager;
@@ -108,5 +111,19 @@ public class UniversityDatabase {
 
 
         return (Course) courses;
+    }
+
+    public List<Staff> getAllStaffByUniversity(String universityName) {
+
+        for(University university: this.getUniversityList()){
+            if(university.getUniversityName().equalsIgnoreCase(universityName)){
+
+               return university.getPersonnel();
+            }else{
+                throw new PersonnelNotFoundException("Could not find any personnel pertaining to " + universityName);
+            }
+        }
+
+        return null;
     }
 };

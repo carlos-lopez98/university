@@ -60,8 +60,6 @@ public class Main {
         //Emulates Student Asking for Courses available by University
         logger.info(String.valueOf(universityDatabase.getAllCourses("Stanford")));
 
-        //Emulates Student adding Course to Curriculum
-
     };
 
 
@@ -93,4 +91,10 @@ public class Main {
             }
         }
     }
+
+    //TODO
+    //Emulate Student Enrolling in class
+    //Emulates Student adding Course to Curriculum
+    //Emulate AdminService Retrieving all Personnel
+    //Emulate Admin adding and removing courses from a university
 }
