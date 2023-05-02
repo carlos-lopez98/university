@@ -45,6 +45,11 @@ public class Main {
 
         logger.info("Please select from below options: ");
         logger.info("1: Browse Universities on file");
+
+
+
+        //Emulate Student enrolling in University
+        Student studentToEnroll = new Student("Bobby", "Lee", null);
     };
 
 

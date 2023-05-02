@@ -48,4 +48,12 @@ public abstract class Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public String getUniAssigned() {
+        return uniAssigned;
+    }
+
+    public void setUniAssigned(String uniAssigned) {
+        this.uniAssigned = uniAssigned;
+    }
 }

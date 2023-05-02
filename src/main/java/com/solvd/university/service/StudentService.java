@@ -1,4 +1,50 @@
 package com.solvd.university.service;
 
+import com.solvd.university.database.StudentDatabase;
+import com.solvd.university.database.UniversityDatabase;
+import com.solvd.university.exceptions.UniversityNotFoundException;
+import com.solvd.university.models.persons.Student;
+import com.solvd.university.models.universities.University;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class StudentService {
+
+    private UniversityDatabase universityDatabase;
+    private StudentDatabase studentDatabase;
+
+    //Initializing our values to mess with
+    public StudentService(StudentDatabase studentDatabase, UniversityDatabase universityDatabase){
+        this.universityDatabase = universityDatabase;
+        this.studentDatabase = studentDatabase;
+    }
+
+    public void enrollToUniversity(Student student, String universityEnrolling){
+        //Null Check
+        if(student == null || universityEnrolling == null){
+            throw new NullPointerException("The information entered is empty");
+        }
+
+       List<String> universityNames = universityDatabase
+               .getUniversityList()
+               .stream()
+               .map( (uni) -> uni.getUniversityName())
+               .collect(Collectors.toList());
+
+        for(String university: universityNames){
+            if(universityEnrolling.equalsIgnoreCase(university)){
+                student.setUniAssigned(universityEnrolling);
+
+                //TODO add student to that Universities' studentList
+
+
+
+            }else{
+                throw new UniversityNotFoundException("Could not find that university in Database");
+            }
+        }
+
+
+    }
 }
