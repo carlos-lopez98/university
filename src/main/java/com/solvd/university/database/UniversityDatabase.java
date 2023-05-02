@@ -26,7 +26,6 @@ public class UniversityDatabase {
         }
     }
 
-
     public void save(University university){
         universityList.add(university);
     }

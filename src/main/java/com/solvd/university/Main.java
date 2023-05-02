@@ -2,17 +2,7 @@ package com.solvd.university;
 
 import com.solvd.university.database.UniversityDatabase;
 import com.solvd.university.models.EntryExamScore;
-import com.solvd.university.models.clubs.Club;
-import com.solvd.university.models.clubs.RoboticsClub;
-import com.solvd.university.models.clubs.SoccerClub;
-import com.solvd.university.models.courses.Calculus;
-import com.solvd.university.models.courses.Chemistry;
-import com.solvd.university.models.courses.Course;
-import com.solvd.university.models.courses.Literature;
-import com.solvd.university.models.departments.Department;
-import com.solvd.university.models.departments.EnglishDep;
-import com.solvd.university.models.departments.ScienceDep;
-import com.solvd.university.models.persons.Staff;
+
 import com.solvd.university.models.persons.Student;
 import com.solvd.university.models.universities.PrivateUniversity;
 import com.solvd.university.models.universities.PublicUniversity;
@@ -28,11 +18,12 @@ import org.apache.logging.log4j.Logger;
 public class Main {
 
     private static final Logger logger = LogManager.getLogger(Main.class);
+
     private static UniversityDatabase universityDatabase = new UniversityDatabase();
 
     public static void main(String[] args) {
 
-        logger.info("********Hello, Welcome to our University system********");
+        logger.debug("********Hello, Welcome to our University system********");
         logger.info("*******************************************************");
         logger.info("Our Current System has the below Universities Available for Review");
         printUniversitiesInSystem();
@@ -43,7 +34,8 @@ public class Main {
         logger.info("Hi " + newAdmissionStudentOne.getFirstName() + "Please input your reading, writing and math scores");
         logger.info("To see what schools you qaulify for");
 
-        newAdmissionStudentOne.setMathScore(98);
+        //Imitating Student Input
+        newAdmissionStudentOne.setMathScore(55);
         newAdmissionStudentOne.setReadingScore(98);
         newAdmissionStudentOne.setWritingScore(90);
 
@@ -51,6 +43,8 @@ public class Main {
         System.out.println("Your qualifying schools are: ");
         printQualifiedSchools(newAdmissionStudentOne);
 
+        logger.info("Please select from below options: ");
+        logger.info("1: Browse Universities on file");
     };
 
 

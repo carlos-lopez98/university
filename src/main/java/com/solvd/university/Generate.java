@@ -28,6 +28,7 @@ public final class Generate {
             add("CalTech");
         }
     };
+
     private static final List<String> PrivateUniversityNames = new ArrayList<>() {
         {
             add("Stanford University");
@@ -54,6 +55,7 @@ public final class Generate {
             add("Mary");
         }
     };
+    
     private static final List<String> LastNames = new ArrayList<>() {
         {
             add("White");
