@@ -1,5 +1,6 @@
 package com.solvd.university.models.persons;
 
+import com.solvd.university.exceptions.InvalidScoreException;
 import com.solvd.university.models.universities.University;
 
 public final class Student extends Person implements Speak {
@@ -22,11 +23,21 @@ public final class Student extends Person implements Speak {
     }
 
     public int getMathScore() {
+
+
+
+
+
         return mathScore;
     }
 
     public void setMathScore(int mathScore) {
-        this.mathScore = mathScore;
+
+        if(mathScore <= 100 && mathScore >= 0){
+            this.mathScore = mathScore;
+        }else {
+            throw new InvalidScoreException("The Score entered must be between 0 and 100");
+        }
     }
 
     public int getReadingScore() {
@@ -34,7 +45,12 @@ public final class Student extends Person implements Speak {
     }
 
     public void setReadingScore(int readingScore) {
-        this.readingScore = readingScore;
+
+        if(readingScore <= 100 && readingScore >= 0){
+            this.readingScore = readingScore;
+        }else{
+            throw new InvalidScoreException("Score must be between 0 and 100");
+        }
     }
 
     public int getWritingScore() {
@@ -42,7 +58,12 @@ public final class Student extends Person implements Speak {
     }
 
     public void setWritingScore(int writingScore) {
-        this.writingScore = writingScore;
+
+        if(writingScore <= 100 && writingScore >= 0){
+            this.writingScore = writingScore;
+        }else{
+            throw new InvalidScoreException("Score must be between 0 and 100");
+        }
     }
 
     @Override
