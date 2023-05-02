@@ -34,11 +34,10 @@ public class StudentService {
 
         for(String university: universityNames){
             if(universityEnrolling.equalsIgnoreCase(university)){
+
                 student.setUniAssigned(universityEnrolling);
-
-                //TODO add student to that Universities' studentList
-
-
+                universityDatabase.addStudentToUniversityStudentList(student, universityEnrolling);
+                studentDatabase.addStudent(student);
 
             }else{
                 throw new UniversityNotFoundException("Could not find that university in Database");

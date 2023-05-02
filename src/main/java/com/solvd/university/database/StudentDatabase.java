@@ -22,7 +22,7 @@ public class StudentDatabase {
     }
 
 
-    private void addStudent(Student student){
+    public void addStudent(Student student){
         students.add(student);
         logger.info("Student was successfully added");
     }

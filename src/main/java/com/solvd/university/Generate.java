@@ -72,6 +72,8 @@ public final class Generate {
 
         University university = new PublicUniversity(uniName, generateCourseList(), generateDepartmentList(),
                 InStateOrOutOfState.get((int) Math.random() * InStateOrOutOfState.size()));
+
+        university.setStudents(generatePublicUniStudentList());
         return university;
     }
 
@@ -82,6 +84,9 @@ public final class Generate {
 
         University university = new PublicUniversity(uniName, generateCourseList(), generateDepartmentList(),
                 InStateOrOutOfState.get((int) Math.random() * InStateOrOutOfState.size()));
+
+        university.setStudents(generatePrivateUniStudentList());
+
         return university;
     }
 
@@ -94,8 +99,9 @@ public final class Generate {
             String studentFirstName = FirstNames.get(randoIndex);
             String lastName = LastNames.get(randoIndex);
             String uniAssigned = PrivateUniversityNames.get(randoIndex);
-
             Student student = new Student(studentFirstName, lastName, uniAssigned);
+
+            student.setStudentId(i);
 
             students.add(student);
         }
@@ -113,6 +119,8 @@ public final class Generate {
             String uniAssigned = PublicUniversityNames.get(randoIndex);
 
             Student student = new Student(studentFirstName, lastName, uniAssigned);
+
+            student.setStudentId(i);
 
             students.add(student);
         }
