@@ -11,7 +11,7 @@ public abstract class Person {
 
     private String uniAssigned;
 
-    Person(String firstName, String lastName, String uniAssigned){
+    Person(String firstName, String lastName, String uniAssigned) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.uniAssigned = uniAssigned;

@@ -2,7 +2,7 @@ package com.solvd.university.models.departments;
 
 import java.util.List;
 
-public class EngineeringDep extends Department implements Budget{
+public class EngineeringDep extends Department implements Budget {
 
     private List<String> buildingToolsAvailable;
 

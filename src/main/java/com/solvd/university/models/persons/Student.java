@@ -24,18 +24,14 @@ public final class Student extends Person implements Speak {
 
     public int getMathScore() {
 
-
-
-
-
         return mathScore;
     }
 
     public void setMathScore(int mathScore) {
 
-        if(mathScore <= 100 && mathScore >= 0){
+        if (mathScore <= 100 && mathScore >= 0) {
             this.mathScore = mathScore;
-        }else {
+        } else {
             throw new InvalidScoreException("The Score entered must be between 0 and 100");
         }
     }
@@ -46,9 +42,9 @@ public final class Student extends Person implements Speak {
 
     public void setReadingScore(int readingScore) {
 
-        if(readingScore <= 100 && readingScore >= 0){
+        if (readingScore <= 100 && readingScore >= 0) {
             this.readingScore = readingScore;
-        }else{
+        } else {
             throw new InvalidScoreException("Score must be between 0 and 100");
         }
     }
@@ -59,9 +55,9 @@ public final class Student extends Person implements Speak {
 
     public void setWritingScore(int writingScore) {
 
-        if(writingScore <= 100 && writingScore >= 0){
+        if (writingScore <= 100 && writingScore >= 0) {
             this.writingScore = writingScore;
-        }else{
+        } else {
             throw new InvalidScoreException("Score must be between 0 and 100");
         }
     }

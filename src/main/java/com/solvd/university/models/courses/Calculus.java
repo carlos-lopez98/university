@@ -1,6 +1,6 @@
 package com.solvd.university.models.courses;
 
-public class Calculus extends Course implements Enroll{
+public class Calculus extends Course implements Enroll {
 
     private String groupsAssigned;
 
@@ -10,7 +10,7 @@ public class Calculus extends Course implements Enroll{
     }
 
     public Calculus(String courseName) {
-       super.setCourseName(courseName);
+        super.setCourseName(courseName);
     }
 
     @Override
