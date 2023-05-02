@@ -17,6 +17,7 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+//Generates information for the Databases to use
 public final class Generate {
 
     private static final List<String> PublicUniversityNames = new ArrayList<>() {
@@ -31,7 +32,7 @@ public final class Generate {
 
     private static final List<String> PrivateUniversityNames = new ArrayList<>() {
         {
-            add("Stanford University");
+            add("Stanford");
             add("UCLA");
             add("University of the Pacific");
             add("USC");

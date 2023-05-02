@@ -28,7 +28,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Emulates Student receiving information about what university they qualify for
-        logger.debug("********Hello, Welcome to our University system********");
+        logger.info("********Hello, Welcome to our University system********");
         logger.info("*******************************************************");
         logger.info("Our Current System has the below Universities Available for Review");
         printUniversitiesInSystem();
@@ -50,7 +50,6 @@ public class Main {
 
         logger.info("Please select from below options: ");
         logger.info("1: Browse Universities on file");
-
 
 
         //Emulate Student enrolling in University

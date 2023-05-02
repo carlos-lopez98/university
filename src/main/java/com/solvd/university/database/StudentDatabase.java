@@ -16,9 +16,9 @@ public class StudentDatabase {
 
     public StudentDatabase(UniversityDatabase database){
         int counter = 0;
-        for(University university: database.getUniversityList()){
+     /*   for(University university: database.getUniversityList()){
             students.addAll(database.getUniversityList().get(counter).getStudents());
-        }
+        }*/
     }
 
 

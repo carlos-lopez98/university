@@ -34,11 +34,9 @@ public class StudentService {
 
         for(String university: universityNames){
             if(universityEnrolling.equalsIgnoreCase(university)){
-
                 student.setUniAssigned(universityEnrolling);
                 universityDatabase.addStudentToUniversityStudentList(student, universityEnrolling);
                 studentDatabase.addStudent(student);
-
             }else{
                 throw new UniversityNotFoundException("Could not find that university in Database");
             }
@@ -57,8 +55,6 @@ public class StudentService {
 
         for(University uni: universities){
             if(uni.getUniversityName().equalsIgnoreCase(universityName)){
-
-
 
             }
         }
